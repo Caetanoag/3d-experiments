@@ -1,0 +1,15 @@
+:root {
+	--color1: #119da4;
+	--color2: #0c7489;
+	--color3: #040404;
+	--color4: #d7d9ce;
+}
+body {
+	background-color: var(--color1);
+	color: var(--color4);
+}
+.content-gallery .main-content {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	gap: 1fr;
+}
