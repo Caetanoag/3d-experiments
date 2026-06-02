@@ -11,10 +11,9 @@ class ParticleCloud {
 		/**@type {Array} */
 		this.particles = particles;
 	}
-	project() {
+	project(fov = 300) {
 		const projected = [];
 		for (const particle of this.particles) {
-			const fov = 300;
 			const depth = particle.z + fov;
 			if (depth <= 0) continue;
 			const px = (particle.x * fov) / depth + SCREEN_WIDTH / 2;
